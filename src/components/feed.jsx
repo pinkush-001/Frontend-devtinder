@@ -5,6 +5,7 @@ import {useEffect} from "react";
 import { addFeed } from "../utils/feedSlice";
 import UserCard from "./userCard"
 
+console.log("env" , import.meta.env);
 const Feed = () => {
   const feed = useSelector((store)=> store.feed);
   const dispatch= useDispatch();
